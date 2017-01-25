@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>noteBlock</title>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="NoteIcon.png">
+    <!--<script type="text/javascript" src="jquery.min.js"></script>-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+  </head>
+  <body>
+    <h1>noteBlock</h1>
+    <form>
+      <p>楽器を選んでください</p>
+      <select name="inst">
+        <option value="">選択してください</option>
+        <option value="harp">harp</option>
+        <option value="pling">pling</option>
+        <option value="snare">snare</option>
+        <option value="hat">hat</option>
+        <option value="bass">bass</option>
+        <option value="basedrum">basedrum</option>
+      </select>
+      <p>音階を選んでください</p>
+      <select name="note">
+        <option value="">選択してください</option>
+        <option value="0.70">ド</option>
+        <option value="0.80">レ</option>
+        <option value="0.89">ミ</option>
+        <option value="0.94">ファ</option>
+        <option value="1.05">ソ</option>
+        <option value="1.18">ラ</option>
+        <option value="1.26">シ</option>
+        <option value="1.42">ド（高い）</option>
+      </select>
+    </form>
+    <section id="sec2">
+      <h3 id="cmdOut">/playsound minecraft:block.note.<span id="selinst"></span> master @p ~ ~ ~ 10 <span id="selnote"></span></h3>
+    </section>
+    <img src="NoteIcon.png" class="icon">
+  </body>
+</html>

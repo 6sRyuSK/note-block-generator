@@ -1,0 +1,46 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
+
+* {
+  font-family: 'Noto Sans JP', sans-serif;
+}
+body {
+  width: 300px;
+}
+form {
+  display: inline-block;
+  height: auto;
+  float: left;
+  width: 100%;
+}
+
+#sec1 {
+  display: inline-block;
+  width: 100%;
+  padding: 15px;
+}
+
+.btn {
+  background-color: #444;
+  padding: 15px;
+  color: #fff;
+  box-shadow: 0 5px rgb(77, 196, 47);
+}
+
+.btn:active {
+  box-shadow: none;
+  top: 5px;
+  position: relative;
+}
+#sec2 {
+  display: inline-block;
+  float: left;
+}
+#cmdOut {
+  display: none;
+}
+.icon {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100px;
+}
